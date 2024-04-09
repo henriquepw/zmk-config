@@ -14,7 +14,7 @@
 #define ADJUST  3
 
 / {
-        conditial_layers {
+        conditional_layers {
                 compatible = "zmk,keymap";
 
                 adjust_layer {
@@ -27,10 +27,10 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                base_layer {
-// -----------------------------------------------------------------------------------------
+                default_layer {
+// ----------------------------------------------------------------------------------
 // | ESC  |  Q  |  W  |  E   |  R  |  T  |    |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | TAB  |  A  |  S  |  D   |  F  |  G  |    |  H  |  J   |  K  |  L  |  ;  |  '  |
+// | TAB  |  A  |  S  |  D   |  F  |  G  |    |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | SHFT |  Z  |  X  |  C   |  V  |  B  |    |  N  |  M   |  ,  |  .  |  /  | ALT  |
 //                    | CTRL | LWR | SPC |    | ENT | RSE  | GUI |
                         bindings = <
@@ -42,7 +42,7 @@
                 };
 
                 lower_layer {
-// -----------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 // | ESC  |  !  |  @  |  #   |  $  |  %  |    |  ^  |  &  |  *  |  (  |  )  | DEL |
 // | TAB  |     |     |      |     |  ~  |    |  -  |  =  |  \  |  [  |  ]  |  `  |
 // | SHFT |     |     |      |     |     |    |  _  |  +  | "|" |  {  |  }  | ALT |
@@ -56,22 +56,22 @@
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
 // | ESC  |  1  |  2  |  3   |  4  |  5  |    |  6  |  7   |  8  |  9  |  0  | DEL |
 // | TAB  |     |     |      |     | CPS |    | LFT | DWN  | UP  | RGT |     |     |
 // | SHFT |     |     |      |     |     |    |     |      |     |     |     | ALT |
 //                    | CTRL | LWR | SPC |    | ENT | RSE  | GUI |
                         bindings = <
-   &trans  &kp N1  &kp N2  &kp N3  &kp N4       &kp N5   &kp N6   &kp N7    &kp N8  &kp N9     &kp N0  &kp DEL
-   &trans  &trans  &trans  &trans  &kp CAPS     &trans   &kp LEFT &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans       &trans   &trans   &trans    &trans  &trans     &trans  &trans
-                   &trans  &trans  &trans       &trans   &trans   &trans
+   &trans  &kp N1  &kp N2  &kp N3  &kp N4    &kp N5    &kp N6   &kp N7    &kp N8  &kp N9     &kp N0  &kp DEL
+   &trans  &trans  &trans  &trans  &kp CAPS  &trans    &kp LEFT &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans    &trans    &trans   &trans    &trans  &trans     &trans  &trans
+                           &trans  &trans    &trans    &trans   &trans   &trans
                         >;
                 };
 
 
                 adjust_layer {
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------
 // | ESC  |     |     |      |     | BT0 |    |     |      |     |      |     |     |
 // | TAB  |     |     |      |     | BT1 |    |     | VOL+ | MUT | VOL- |     |     |
 // | SHFT |     |     |      |     | BT2 |    |     |      |     |      |     |     |
