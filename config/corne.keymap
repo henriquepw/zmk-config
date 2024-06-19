@@ -46,7 +46,7 @@
    &trans  &trans   &trans     &trans     &kp LBRC   &kp RBRC     &kp LBKT   &kp RBKT   &kp LT     &kp GT    &kp QMARK  &trans 
                             &trans     &trans     &trans       &trans     &trans     &trans
                         >;
-                }
+                };
 
                 raise_layer {
 // ---------------------------------------------------------------------------------
